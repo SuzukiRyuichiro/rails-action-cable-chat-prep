@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+User.destroy_all
+Chatroom.destroy_all
+
+Chatroom.create(name: "General")
+User.create(email: "dragon.aka.scooter@gmail.com", password: "123456", nickname: "Scooter")
+User.create(email: "mail@mail.com", password: "123456", nickname: "Ming")
+
+puts "created #{Chatroom.count} chatrooms"
+puts "created #{User.count} users"
