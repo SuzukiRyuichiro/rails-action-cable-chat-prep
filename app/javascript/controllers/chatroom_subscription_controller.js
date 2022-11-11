@@ -18,6 +18,7 @@ export default class extends Controller {
       },
       {
         received: (data) => {
+          console.log(data);
           // Convert the data into and HTML element and insert
           this.messagesTarget.insertAdjacentHTML("beforeend", data);
           // Scroll down to that place
