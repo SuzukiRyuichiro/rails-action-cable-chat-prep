@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Chatrooms</h1>
   <% @chatrooms.each do |chatroom| %>
-    <%= link_to chatroom.name, chatroom_path(chatroom) %>
+    <p><%= link_to chatroom.name, chatroom_path(chatroom) %></p>
   <% end %>
 </div>
